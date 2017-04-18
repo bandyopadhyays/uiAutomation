@@ -43,7 +43,7 @@ public class TC001_VerifyLoginWithInvalidCredentials
 	@AfterClass
 	public void endTest()
 	{
-		
+		driver.close();		
 	}
 
 }
