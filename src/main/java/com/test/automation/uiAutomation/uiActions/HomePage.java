@@ -3,6 +3,7 @@
  */
 package com.test.automation.uiAutomation.uiActions;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,10 +15,12 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class HomePage 
 {
+	public static final Logger log = Logger.getLogger(HomePage.class.getName());
 	WebDriver driver;
 	
 	public HomePage(WebDriver driver)
 	{
+		log.info("HomePage object created.");
 		PageFactory.initElements(driver, this);
 	}
 	
